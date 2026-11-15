@@ -23,12 +23,17 @@ npm run preview    # melihat hasil build secara lokal
 | `npm run build` | URL bersih (`/produk/signature-square-maroon`) | Hosting di root domain. Server harus mengarahkan semua path ke `index.html` (SPA fallback). |
 | `npm run build:static` | Hash (`#/produk/...`), aset relatif | Hosting statis tanpa aturan rewrite, atau di sub-folder. |
 
-### Deploy ke Vercel
+### Deploy
 
-Impor repositori ini di <https://vercel.com/new>. Vercel mengenali Vite secara otomatis
-(perintah build `npm run build`, keluaran `dist/`), jadi tidak ada pengaturan yang perlu diubah.
-`vercel.json` mengarahkan semua path ke `index.html` agar tautan langsung seperti
-`/produk/signature-square-maroon` tetap terbuka. Setiap push ke `main` otomatis ter-deploy.
+Situs tayang di GitHub Pages: <https://hanbvc.github.io/besafire-webstore/>.
+
+Setiap push ke `main` menjalankan `.github/workflows/deploy-pages.yml`: unit test, lalu
+`npm run build:static`, lalu hasilnya dikirim ke branch `gh-pages` yang disajikan GitHub Pages.
+Branch `gh-pages` hanya berisi hasil build dan ditimpa pada setiap deploy, jadi jangan diedit
+langsung. Pages tidak punya aturan rewrite, karena itu build ini memakai routing hash.
+
+Alternatif: impor repositori di <https://vercel.com/new> untuk URL bersih. Vercel mengenali Vite
+secara otomatis, dan `vercel.json` sudah mengarahkan semua path ke `index.html`.
 
 ## Yang perlu diisi sebelum tayang
 
