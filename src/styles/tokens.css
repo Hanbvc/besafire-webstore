@@ -1,0 +1,52 @@
+/*
+ * Layout concept: a quiet white gallery. Product tiles sit on the same soft
+ * blush as the brand's product photography, type is small, tracked and
+ * centred, and navy/gold from the Besafire monogram is reserved for chrome,
+ * actions and the footer.
+ */
+:root {
+  /* Brand palette, sampled from the Besafire logo, packaging and photography */
+  --navy: #0f102e;
+  --navy-soft: #1b1d4a;
+  --maroon: #7a1f2b;
+  --gold: #c9a13b;
+  --gold-light: #e9cf86;
+  --blush: #fff1ee;
+  --blush-deep: #f4ddd7;
+
+  /* Roles */
+  --bg: #ffffff;
+  --ink: #15163a;
+  --ink-muted: #6d6e85;
+  --line: #e6e0de;
+  --surface: var(--blush);
+  --on-dark: #f7f1e6;
+  --on-dark-muted: #b9b6c9;
+  --overlay: rgb(15 16 46 / 0.45);
+
+  /* Type */
+  --font-display: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
+  --font-body: 'Jost', 'Century Gothic', 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --tracking: 0.1em;
+  --tracking-wide: 0.16em;
+
+  /* Space and shape */
+  --gutter: 16px;
+  --page-max: 1320px;
+  --radius-pill: 999px;
+  --shadow-float: 0 4px 14px rgb(15 16 46 / 0.14);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  color-scheme: light;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 32px;
+  }
+}

@@ -1,0 +1,307 @@
+/* ---- Hero -------------------------------------------------------------- */
+
+.hero img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  /* On phones the square crop is anchored on the navy bag. */
+  object-position: right center;
+  background: var(--surface);
+}
+
+@media (min-width: 768px) {
+  .hero img {
+    aspect-ratio: 1206 / 621;
+    object-position: center;
+  }
+}
+
+/* ---- Filter / sort bar ------------------------------------------------- */
+
+.toolbar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 30;
+  margin-top: 12px;
+  background: var(--bg);
+}
+
+.toolbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+}
+
+.toolbar__filter,
+.toolbar__sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.toolbar__sort {
+  position: relative;
+}
+
+.toolbar__sort select {
+  appearance: none;
+  padding: 10px 30px 10px 0;
+  border: 0;
+  background: none;
+  text-transform: uppercase;
+  text-align: right;
+  text-align-last: right;
+  cursor: pointer;
+}
+
+.toolbar__sort svg {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+/* ---- Product grid ------------------------------------------------------ */
+
+.catalog {
+  padding-top: 8px;
+}
+
+.catalog__summary {
+  margin-bottom: 16px;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 10px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 48px 20px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card__media {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.card__media--skeleton {
+  animation: pulse 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  to {
+    background: var(--blush-deep);
+  }
+}
+
+.card__image {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Product shots are square on the same blush ground as the tile. A slight
+     zoom fills the tall tile; the lift keeps the box clear of the add button. */
+  transform: scale(1.14) translateY(-3%);
+  transition: transform 0.5s var(--ease);
+}
+
+.card:hover .card__image img {
+  transform: scale(1.19) translateY(-3%);
+}
+
+.card__flag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 8px;
+  background: var(--navy);
+  color: var(--on-dark);
+  font-size: 0.6875rem;
+  letter-spacing: var(--tracking);
+  text-transform: uppercase;
+}
+
+.card__wish {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+}
+
+.card__wish.is-active {
+  color: var(--maroon);
+}
+
+.card__add {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+}
+
+.card__name {
+  margin-top: 12px;
+  padding-inline: 4px;
+  font-size: var(--text-sm);
+  letter-spacing: 0.13em;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.card__name a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 4px;
+}
+
+.card__price {
+  margin-top: 4px;
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking);
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 640px) {
+  .card__wish {
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .card__add {
+    right: 12px;
+    bottom: 12px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ---- Filter drawer ----------------------------------------------------- */
+
+.filter__group + .filter__group {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.filter__group legend {
+  /* Floated so the group's top border is not interrupted by the legend. */
+  float: left;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.filter__group legend + * {
+  clear: both;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.check input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: var(--navy);
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 12px;
+}
+
+.swatch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.swatch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.swatch__dot {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.swatch input:checked + .swatch__dot {
+  box-shadow:
+    0 0 0 2px var(--bg),
+    0 0 0 4px var(--navy);
+}
+
+.swatch input:focus-visible + .swatch__dot {
+  outline: 2px solid var(--gold);
+  outline-offset: 5px;
+}
+
+.swatch input:checked ~ .swatch__label {
+  font-weight: 500;
+}
+
+.filter__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.filter__actions .btn {
+  padding-inline: 8px;
+  letter-spacing: var(--tracking);
+}

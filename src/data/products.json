@@ -1,0 +1,399 @@
+{
+  "collections": [
+    {
+      "id": "signature",
+      "name": "Signature Monogram",
+      "description": "Motif monogram tone-on-tone dengan bingkai senada."
+    },
+    {
+      "id": "heritage",
+      "name": "Heritage Border",
+      "description": "Motif monogram dengan bingkai emas."
+    }
+  ],
+  "products": [
+    {
+      "id": "prd-maroon",
+      "slug": "signature-square-maroon",
+      "name": "Signature Square – Maroon",
+      "collectionId": "signature",
+      "color": {
+        "name": "Maroon",
+        "family": "Merah",
+        "hex": "#7a1f2b"
+      },
+      "description": "Scarf segi empat dengan motif monogram Besafire tone-on-tone dan bingkai senada. Tampil anggun untuk keseharian maupun acara istimewa.",
+      "details": [
+        "Motif monogram Besafire di seluruh permukaan",
+        "Bingkai senada di keempat sisi",
+        "Pilihan kemasan gift box eksklusif Besafire Scarves"
+      ],
+      "images": [
+        {
+          "src": "images/products/signature-maroon-1.webp",
+          "alt": "Signature Square – Maroon bersama kotak kemasan Besafire Scarves"
+        },
+        {
+          "src": "images/products/signature-maroon-2.webp",
+          "alt": "Kotak kemasan Signature Square – Maroon"
+        },
+        {
+          "src": "images/products/signature-maroon-3.webp",
+          "alt": "Detail motif monogram Signature Square – Maroon"
+        }
+      ],
+      "variants": [
+        {
+          "id": "maroon-scarf",
+          "sku": "BSF-MAROON-S",
+          "label": "Scarf",
+          "price": 325000,
+          "stock": 12
+        },
+        {
+          "id": "maroon-giftbox",
+          "sku": "BSF-MAROON-GB",
+          "label": "Scarf + Gift Box",
+          "price": 395000,
+          "stock": 8
+        }
+      ],
+      "createdAt": "2026-11-10T00:00:00.000Z"
+    },
+    {
+      "id": "prd-navy",
+      "slug": "heritage-square-navy",
+      "name": "Heritage Square – Navy",
+      "collectionId": "heritage",
+      "color": {
+        "name": "Navy",
+        "family": "Biru",
+        "hex": "#1b1d4a"
+      },
+      "description": "Scarf segi empat bermotif monogram Besafire dengan bingkai emas yang tegas. Pilihan klasik untuk tampilan yang berkelas.",
+      "details": [
+        "Motif monogram Besafire di seluruh permukaan",
+        "Bingkai emas di keempat sisi",
+        "Pilihan kemasan gift box eksklusif Besafire Scarves"
+      ],
+      "images": [
+        {
+          "src": "images/products/signature-navy-1.webp",
+          "alt": "Heritage Square – Navy bersama kotak kemasan Besafire Scarves"
+        },
+        {
+          "src": "images/products/signature-navy-2.webp",
+          "alt": "Kotak kemasan Heritage Square – Navy"
+        },
+        {
+          "src": "images/products/signature-navy-3.webp",
+          "alt": "Detail motif monogram Heritage Square – Navy"
+        }
+      ],
+      "variants": [
+        {
+          "id": "navy-scarf",
+          "sku": "BSF-NAVY-S",
+          "label": "Scarf",
+          "price": 325000,
+          "stock": 12
+        },
+        {
+          "id": "navy-giftbox",
+          "sku": "BSF-NAVY-GB",
+          "label": "Scarf + Gift Box",
+          "price": 395000,
+          "stock": 8
+        }
+      ],
+      "createdAt": "2026-11-09T00:00:00.000Z"
+    },
+    {
+      "id": "prd-emerald",
+      "slug": "signature-square-emerald",
+      "name": "Signature Square – Emerald",
+      "collectionId": "signature",
+      "color": {
+        "name": "Emerald",
+        "family": "Hijau",
+        "hex": "#1f6b4f"
+      },
+      "description": "Scarf segi empat dengan motif monogram Besafire tone-on-tone dan bingkai senada. Tampil anggun untuk keseharian maupun acara istimewa.",
+      "details": [
+        "Motif monogram Besafire di seluruh permukaan",
+        "Bingkai senada di keempat sisi",
+        "Pilihan kemasan gift box eksklusif Besafire Scarves"
+      ],
+      "images": [
+        {
+          "src": "images/products/signature-emerald-1.webp",
+          "alt": "Signature Square – Emerald bersama kotak kemasan Besafire Scarves"
+        },
+        {
+          "src": "images/products/signature-emerald-2.webp",
+          "alt": "Kotak kemasan Signature Square – Emerald"
+        },
+        {
+          "src": "images/products/signature-emerald-3.webp",
+          "alt": "Detail motif monogram Signature Square – Emerald"
+        }
+      ],
+      "variants": [
+        {
+          "id": "emerald-scarf",
+          "sku": "BSF-EMERALD-S",
+          "label": "Scarf",
+          "price": 325000,
+          "stock": 12
+        },
+        {
+          "id": "emerald-giftbox",
+          "sku": "BSF-EMERALD-GB",
+          "label": "Scarf + Gift Box",
+          "price": 395000,
+          "stock": 8
+        }
+      ],
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "isSample": true
+    },
+    {
+      "id": "prd-mocha",
+      "slug": "signature-square-mocha",
+      "name": "Signature Square – Mocha",
+      "collectionId": "signature",
+      "color": {
+        "name": "Mocha",
+        "family": "Cokelat",
+        "hex": "#8a6a55"
+      },
+      "description": "Scarf segi empat dengan motif monogram Besafire tone-on-tone dan bingkai senada. Tampil anggun untuk keseharian maupun acara istimewa.",
+      "details": [
+        "Motif monogram Besafire di seluruh permukaan",
+        "Bingkai senada di keempat sisi",
+        "Pilihan kemasan gift box eksklusif Besafire Scarves"
+      ],
+      "images": [
+        {
+          "src": "images/products/signature-mocha-1.webp",
+          "alt": "Signature Square – Mocha bersama kotak kemasan Besafire Scarves"
+        },
+        {
+          "src": "images/products/signature-mocha-2.webp",
+          "alt": "Kotak kemasan Signature Square – Mocha"
+        },
+        {
+          "src": "images/products/signature-mocha-3.webp",
+          "alt": "Detail motif monogram Signature Square – Mocha"
+        }
+      ],
+      "variants": [
+        {
+          "id": "mocha-scarf",
+          "sku": "BSF-MOCHA-S",
+          "label": "Scarf",
+          "price": 345000,
+          "stock": 6
+        }
+      ],
+      "createdAt": "2026-10-27T00:00:00.000Z",
+      "isSample": true
+    },
+    {
+      "id": "prd-plum",
+      "slug": "signature-square-plum",
+      "name": "Signature Square – Plum",
+      "collectionId": "signature",
+      "color": {
+        "name": "Plum",
+        "family": "Ungu",
+        "hex": "#5b3566"
+      },
+      "description": "Scarf segi empat dengan motif monogram Besafire tone-on-tone dan bingkai senada. Tampil anggun untuk keseharian maupun acara istimewa.",
+      "details": [
+        "Motif monogram Besafire di seluruh permukaan",
+        "Bingkai senada di keempat sisi",
+        "Pilihan kemasan gift box eksklusif Besafire Scarves"
+      ],
+      "images": [
+        {
+          "src": "images/products/signature-plum-1.webp",
+          "alt": "Signature Square – Plum bersama kotak kemasan Besafire Scarves"
+        },
+        {
+          "src": "images/products/signature-plum-2.webp",
+          "alt": "Kotak kemasan Signature Square – Plum"
+        },
+        {
+          "src": "images/products/signature-plum-3.webp",
+          "alt": "Detail motif monogram Signature Square – Plum"
+        }
+      ],
+      "variants": [
+        {
+          "id": "plum-scarf",
+          "sku": "BSF-PLUM-S",
+          "label": "Scarf",
+          "price": 325000,
+          "stock": 12
+        },
+        {
+          "id": "plum-giftbox",
+          "sku": "BSF-PLUM-GB",
+          "label": "Scarf + Gift Box",
+          "price": 395000,
+          "stock": 8
+        }
+      ],
+      "createdAt": "2026-10-14T00:00:00.000Z",
+      "isSample": true
+    },
+    {
+      "id": "prd-dusty-rose",
+      "slug": "signature-square-dusty-rose",
+      "name": "Signature Square – Dusty Rose",
+      "collectionId": "signature",
+      "color": {
+        "name": "Dusty Rose",
+        "family": "Merah Muda",
+        "hex": "#d99aa2"
+      },
+      "description": "Scarf segi empat dengan motif monogram Besafire tone-on-tone dan bingkai senada. Tampil anggun untuk keseharian maupun acara istimewa.",
+      "details": [
+        "Motif monogram Besafire di seluruh permukaan",
+        "Bingkai senada di keempat sisi",
+        "Pilihan kemasan gift box eksklusif Besafire Scarves"
+      ],
+      "images": [
+        {
+          "src": "images/products/signature-dusty-rose-1.webp",
+          "alt": "Signature Square – Dusty Rose bersama kotak kemasan Besafire Scarves"
+        },
+        {
+          "src": "images/products/signature-dusty-rose-2.webp",
+          "alt": "Kotak kemasan Signature Square – Dusty Rose"
+        },
+        {
+          "src": "images/products/signature-dusty-rose-3.webp",
+          "alt": "Detail motif monogram Signature Square – Dusty Rose"
+        }
+      ],
+      "variants": [
+        {
+          "id": "dusty-rose-scarf",
+          "sku": "BSF-DUSTY-ROSE-S",
+          "label": "Scarf",
+          "price": 325000,
+          "stock": 3
+        },
+        {
+          "id": "dusty-rose-giftbox",
+          "sku": "BSF-DUSTY-ROSE-GB",
+          "label": "Scarf + Gift Box",
+          "price": 395000,
+          "stock": 5
+        }
+      ],
+      "createdAt": "2026-10-13T00:00:00.000Z",
+      "isSample": true
+    },
+    {
+      "id": "prd-olive",
+      "slug": "signature-square-olive",
+      "name": "Signature Square – Olive",
+      "collectionId": "signature",
+      "color": {
+        "name": "Olive",
+        "family": "Hijau",
+        "hex": "#6c7436"
+      },
+      "description": "Scarf segi empat dengan motif monogram Besafire tone-on-tone dan bingkai senada. Tampil anggun untuk keseharian maupun acara istimewa.",
+      "details": [
+        "Motif monogram Besafire di seluruh permukaan",
+        "Bingkai senada di keempat sisi",
+        "Pilihan kemasan gift box eksklusif Besafire Scarves"
+      ],
+      "images": [
+        {
+          "src": "images/products/signature-olive-1.webp",
+          "alt": "Signature Square – Olive bersama kotak kemasan Besafire Scarves"
+        },
+        {
+          "src": "images/products/signature-olive-2.webp",
+          "alt": "Kotak kemasan Signature Square – Olive"
+        },
+        {
+          "src": "images/products/signature-olive-3.webp",
+          "alt": "Detail motif monogram Signature Square – Olive"
+        }
+      ],
+      "variants": [
+        {
+          "id": "olive-scarf",
+          "sku": "BSF-OLIVE-S",
+          "label": "Scarf",
+          "price": 325000,
+          "stock": 12
+        },
+        {
+          "id": "olive-giftbox",
+          "sku": "BSF-OLIVE-GB",
+          "label": "Scarf + Gift Box",
+          "price": 395000,
+          "stock": 8
+        }
+      ],
+      "createdAt": "2026-09-30T00:00:00.000Z",
+      "isSample": true
+    },
+    {
+      "id": "prd-charcoal",
+      "slug": "signature-square-charcoal",
+      "name": "Signature Square – Charcoal",
+      "collectionId": "signature",
+      "color": {
+        "name": "Charcoal",
+        "family": "Abu-abu",
+        "hex": "#44464f"
+      },
+      "description": "Scarf segi empat dengan motif monogram Besafire tone-on-tone dan bingkai senada. Tampil anggun untuk keseharian maupun acara istimewa.",
+      "details": [
+        "Motif monogram Besafire di seluruh permukaan",
+        "Bingkai senada di keempat sisi",
+        "Pilihan kemasan gift box eksklusif Besafire Scarves"
+      ],
+      "images": [
+        {
+          "src": "images/products/signature-charcoal-1.webp",
+          "alt": "Signature Square – Charcoal bersama kotak kemasan Besafire Scarves"
+        },
+        {
+          "src": "images/products/signature-charcoal-2.webp",
+          "alt": "Kotak kemasan Signature Square – Charcoal"
+        },
+        {
+          "src": "images/products/signature-charcoal-3.webp",
+          "alt": "Detail motif monogram Signature Square – Charcoal"
+        }
+      ],
+      "variants": [
+        {
+          "id": "charcoal-scarf",
+          "sku": "BSF-CHARCOAL-S",
+          "label": "Scarf",
+          "price": 325000,
+          "stock": 0
+        },
+        {
+          "id": "charcoal-giftbox",
+          "sku": "BSF-CHARCOAL-GB",
+          "label": "Scarf + Gift Box",
+          "price": 395000,
+          "stock": 0
+        }
+      ],
+      "createdAt": "2026-09-29T00:00:00.000Z",
+      "isSample": true
+    }
+  ]
+}
